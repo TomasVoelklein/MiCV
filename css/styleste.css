@@ -33,8 +33,8 @@ ul li {
     list-style: none;
     text-decoration: underline;
     padding: 6px 20px;
-    font-weight: 1000;
-    font-size: 1.7rem;
+    font-weight: bold;
+    font-size: 2rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
@@ -46,7 +46,8 @@ ul li:hover {
 }
 header {
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
+    top: 20%;
     padding: 0 50px;
 }
 header h1 {
@@ -56,9 +57,14 @@ header h2 {
     font-size: 4rem;
 }
 header p {
+    padding: 22px 22px 10px 22px;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+     font-weight: bold;
+     font-size: 2.5rem;
+    background-color: #aca3a39a;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px coral;
 
 }
 header button {
@@ -67,7 +73,7 @@ header button {
     outline: none;
     border: 0;
     height: 40px;
-    font-weight: 500;
+    font-weight: 800;
     background-color: #ff4321;
     transition: width 0.5s;
     cursor: pointer;
@@ -93,7 +99,7 @@ header button:hover{
     flex-wrap: wrap;
 }
 .container .yo {
-    height: 600px;
+    height: 479px;
 width: 550px;
 right: 10%;
 bottom: 0;
@@ -111,14 +117,19 @@ flex: 1;
 }
 .icon {
 position: absolute;
+left: 5%;
 bottom: 8%;
-padding: 0 50px;
+padding: 0 10px;
+  box-shadow: 2px 2px 50px coral;
+  border-radius: 5px;
 }
 .icon > i {
     font-size: 4rem;
     padding: 0 10px;
     transition: all 0.3s ease 0s;
-    cursor: pointer;;
+    cursor: pointer;
+    border-radius: 5px;
+  
 }
 .icon >i:hover{
     background-color: #ff4321;
@@ -168,6 +179,7 @@ padding: 0 50px;
             position: absolute;
             bottom: 30%;
             padding: 0 50px;
+            transition: all 0.3s ease 0s;
         }
         header h1 {
             font-size: 10rem;
@@ -213,21 +225,26 @@ padding: 0 50px;
             flex-wrap: wrap;
         }
         .container .yo {
-            height: 200px;
-        width: 200px;
+            height: 320px;
+        width: 280px;
         right: 10%;
         bottom: 0;
         z-index: 999;
         position: absolute;
         flex: 1;
+        transition: all 0.3s ease 0s;
         }
         .container .fondo-yo {
             position: absolute;
-            height: 220px;
-            width: 180px;
-            right: 2%;
+            height: 340px;
+            width: 280px;
+            right: 8%;
             bottom: 0;
             flex: 2;
+            transition: all 0.3s ease 0s;
+        }
+        .container .fondo-yo > i {
+            transition: all 0.3s ease 0s;
         }
         .icon {
         position: absolute;
@@ -291,14 +308,17 @@ padding: 0 50px;
                 position: absolute;
                 bottom: 30%;
                 padding: 0 50px;
+                transition: all 0.3s ease 0s;
             }
             header h1 {
                 font-size: 6rem;
                 height: 180px;
+                transition: all 0.3s ease 0s;
             }
             header h2 {
                 font-size: 6rem;
                 height: 137px;
+                transition: all 0.3s ease 0s;
                
             }
             header p {
@@ -339,8 +359,8 @@ padding: 0 50px;
                 flex-wrap: wrap;
             }
             .container .yo {
-                height: 200px;
-            width: 200px;
+                height: 300px;
+            width: 325px;
             right: 10%;
             bottom: 0;
             z-index: 999;
@@ -350,9 +370,9 @@ padding: 0 50px;
             }
             .container .fondo-yo {
                 position: absolute;
-                height: 220px;
-                width: 180px;
-                right: 2%;
+                height: 380px;
+                width: 320px;
+                right: 15%;
                 bottom: 0;
                 flex: 2;
                 display: none;
