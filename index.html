@@ -10,38 +10,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
+    
     <div class="container">
         <nav>
-            <p class="logo">LOGOTIPO</p>
+            <p onclick="window.location.href='index.html';" class="logo">LOGOTIPO</p>
             <ul>
-                <li>¿Quien Soy?</li>
+                <li onclick="window.location.href='prueba.html';">¿Quien Soy?</li>
                 <li>Portfolio</li>
-                <li>Contacto</li>
-                <li>Inicio</li>
+                <li onclick="window.location.href='contacto.html';">Contacto</li>
+                <li onclick="window.location.href='index.html';">Inicio</li>
 
             
             </ul>
         </nav>
-        <header>
-            <h1> BIENVENIDOS</h1>
-            <h2> Tomas Voelklein</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   <br> Quam beatae itaque dolor asperiores voluptatem fugiat 
-                   <br> sunt ipsum totam inventore impedit 
-                   <br> , ea, ex nostrum repudiandae iusto?
-                </p>
-        <button>Conoceme! <img src="/img/bxs-right-arrow-alt.svg"> </button>
-        </header>
+<header>
+    <h1> BIENVENIDOS</h1>
+        <h2> Tomas Voelklein</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br> Quam beatae itaque dolor asperiores voluptatem fugiat 
+                <br> sunt ipsum totam inventore impedit 
+                <br> , ea, ex nostrum repudiandae iusto?</p>
+        <button onclick="window.location.href='prueba.html';">Conoceme! <img src="/img/bxs-right-arrow-alt.svg"> </button>
+ </header>
 <section class="home">
     <img class="yo" src="/img/pngegg.png" alt="">
      <img class="fondo-yo" src="/img/pattern..png" alt="">
 </section>
     <div class="icon">
-            <i class='bx bxl-gmail' ></i>
-            <i class='bx bxl-whatsapp' ></i>
-            <i class='bx bxl-github'></i>
+            <i id='boton-enviar' class='bx bxl-gmail' ></i>
+                  <script>document.getElementById("boton-enviar").addEventListener("click", function() {
+                  window.location.href = "mailto:destinatario@ejemplo.com"; });</script>
+            <i onclick="window.location.href='https://www.shorturl.at/dgFZ0'" class='bx bxl-whatsapp' ></i>
+            <i onclick="window.location.href='https://github.com/TomasVoelklein?tab=repositories'" class='bx bxl-github'></i>
         </div>
     </div>
 </body>

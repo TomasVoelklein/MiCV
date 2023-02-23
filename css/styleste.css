@@ -16,6 +16,7 @@ html {
 .logo {
     font-weight: 600;
     font-size: 3.8rem;
+    cursor: pointer;
 
 }   
 
