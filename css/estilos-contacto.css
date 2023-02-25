@@ -41,8 +41,10 @@ nav a:hover {
     border-radius: 5px;
     font-size: 18px;
     text-decoration: none;
-    float: right;
-    position: static
+    float: left;
+    position: relative;
+    left: 38%;
+
 }
 
 .social-btn:hover {
