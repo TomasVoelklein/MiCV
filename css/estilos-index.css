@@ -13,19 +13,24 @@ html {
     font-family: 'Roboto', sans-serif;
     position: relative;
 }
-.logo {
-    font-weight: 600;
-    font-size: 3.8rem;
-    cursor: pointer;
+.logo p{
+    width: 100px;
+    height: 100px;
+    
 
 }   
+.logo img {
+    width: 185px;
+    height: 185px;
+    cursor: pointer;
+}
 
 nav{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 0px 50px 0 50px;
     background-color: lightcoral;
 }
 ul li {
@@ -52,7 +57,27 @@ header {
     padding: 0 50px;
 }
 header h1 {
-    font-size: 10rem;
+    font-size: 5rem;
+    display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 8ch;
+
+animation: typing 4s steps(15) backwards infinite,  blink .9s infinite backwards;
+overflow:hidden;
+}
+
+@keyframes typing {
+
+from { width: 0}
+to {
+    width: 48%;
+}
+}
+@keyframes blink {
+    50% { border-color: transparent}
+   
 }
 header h2 {
     font-size: 4rem;
@@ -63,9 +88,10 @@ header p {
     margin-bottom: 20px;
      font-weight: bold;
      font-size: 2.2rem;
-    background-color: #aca3a39a;
+    background-color: #f83d048f;
     border-radius: 20px;
-    box-shadow: 2px 2px 50px coral;
+    box-shadow: 2px 2px 50px rgba(255, 127, 80, 0.747);
+    color: aliceblue;
 
 }
 header button {
@@ -81,6 +107,8 @@ header button {
     border-radius: 20px;
     color: #fff;
 
+
+    /* aca */
 }
 header button img {
     display: none;
@@ -136,6 +164,8 @@ padding: 0 10px;
     background-color: #ff4321;
 }
 
+ /* resolucion para computadoras */
+
     @media (max-width: 1500px){
  
         .container {
@@ -181,10 +211,28 @@ padding: 0 10px;
             bottom: 30%;
             padding: 0 50px;
             transition: all 0.3s ease 0s;
+            margin-top: 100px;
         }
         header h1 {
-            font-size: 10rem;
-        }
+            font-size: 5rem;
+            animation: typing 0.1s steps(14.9) backwards infinite,  blink 10s;
+            overflow: hidden;
+            }
+            
+            @keyframes typing {
+            
+            from { width: 0}
+            to {
+                width: 59%;
+            }
+            }
+            @keyframes blink {
+                50% { border-color: transparent}
+               
+            }
+
+
+        
         header h2 {
             font-size: 4rem;
         }
@@ -194,19 +242,22 @@ padding: 0 10px;
             font-size: 1.8rem;
         
         }
+        /* boton conoceme! */
         header button {
             padding: 0 5px;
             width: 140px;
             outline: none;
             border: 0;
             height: 40px;
-            font-weight: 500;
+            font-weight: 800;
             background-color: #ff4321;
             transition: width 0.5s;
             cursor: pointer;
             border-radius: 20px;
             color: #fff;
         
+        
+            /* aca */
         }
         header button img {
             display: none;
@@ -264,6 +315,9 @@ padding: 0 10px;
          
         }
 
+        
+        /* resolucion tablets*/ 
+
         @media (max-width: 720px){
  
             .container {
@@ -312,10 +366,25 @@ padding: 0 10px;
                 transition: all 0.3s ease 0s;
             }
             header h1 {
-                font-size: 6rem;
-                height: 180px;
+                font-size: 4rem;
+                height: 100px;
                 transition: all 0.3s ease 0s;
+                animation: typing 0.1s steps(14.9) backwards infinite,  blink 10s;
+            overflow: hidden;
             }
+            
+            @keyframes typing {
+            
+            from { width: 0}
+            to {
+                width: 100%;
+            }
+            }
+            @keyframes blink {
+                40% { border-color: transparent}
+               
+            }
+            
             header h2 {
                 font-size: 6rem;
                 height: 137px;
@@ -327,10 +396,10 @@ padding: 0 10px;
                 margin-bottom: 20px;
                 font-size: 1.8rem;
             
-            }
+            }      
             header button {
                 padding: 0 5px;
-                width: 261px;
+                width: 140px;
                 outline: none;
                 border: 0;
                 height: 40px;
@@ -340,25 +409,30 @@ padding: 0 10px;
                 cursor: pointer;
                 border-radius: 20px;
                 color: #fff;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            margin-left: 150px;
             
+                /* aca */
             }
             header button img {
                 display: none;
             }
             header button:hover img {
-                display: block;
+                display: none;
             }
             header button:hover{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 160px;
+                display: inline-block;
+            
             
             }
             .home {
-                display: flex;
+                display: none;
                 flex-wrap: wrap;
-            }
+            }    
+          
             .container .yo {
                 height: 300px;
             width: 325px;
@@ -381,20 +455,23 @@ padding: 0 10px;
             .icon {
             position: absolute;
             bottom: 5%;
-            right: 20%;
-            padding: 0 0px;
+            
+            padding: 0 0px 0 0px;
+            margin-left: 110px;
             }
             .icon > i {
-                font-size: 10rem;
-                padding: 0 10px;
-                transition: all 0.3s ease 0s;
+                font-size: 8rem;
+               transition: all 0.3s ease 0s;
                 cursor: pointer;;
             }
             .icon >i:hover{
                 background-color: #ff4321;
             }
              
-            }
+        }
+
+            /* resolucion para celulares */
+            
             @media (max-width: 500px){
  
                 .container {
@@ -408,6 +485,7 @@ padding: 0 10px;
                     font-weight: 600;
                     font-size: 3.8rem;
                     display: flex;
+                    margin-left: 100px;
                 
                 }   
                 
@@ -438,31 +516,61 @@ padding: 0 10px;
                     color: #fff;
                 }
                 header {
-                    position: absolute;
+                    
                     bottom: 30%;
-                    padding: 0 50px;
+                    padding: 0 1px 0 15px;
                     transition: all 0.3s ease 0s;
+                    width: 266px;
+                    height: 500px;
+                    margin-top: 0px;
+                    top: 250px;
+                    margin-top: 0px
+                    ;
                 }
+                /* Este es el "bienvenidos" */
                 header h1 {
-                    font-size: 6rem;
-                    height: 180px;
+                    display: none;
+                    font-size: 4rem;
+                    height: 40px;
                     transition: all 0.3s ease 0s;
-                }
+                    animation: typing 0.1s steps(14.9) backwards infinite,  blink 10s;
+            overflow: hidden;
+            }
+            
+            @keyframes typing {
+            
+            from { width: 0}
+            to {
+                width: 65%;
+            }
+            }
+            @keyframes blink {
+                10% { border-color: transparent}
+               
+            }
+                
                 header h2 {
-                    font-size: 6rem;
+                    font-size: 4rem;
                     height: 137px;
                     transition: all 0.3s ease 0s;
+                    display: none;
                    
                 }
                 header p {
+                    height: 432px;
+                    width: 244px;
+                    padding-right: 10px;                    
                     margin-top: 20px;
+                    margin-right: 0;
                     margin-bottom: 20px;
-                    font-size: 1.8rem;
+                    margin-left: 90px;
+                    font-size: 2.2rem;
+                    
                 
                 }
                 header button {
                     padding: 0 5px;
-                    width: 261px;
+                    width: 140px;
                     outline: none;
                     border: 0;
                     height: 40px;
@@ -472,19 +580,17 @@ padding: 0 10px;
                     cursor: pointer;
                     border-radius: 20px;
                     color: #fff;
-                
+                    margin-left: 130px;
                 }
                 header button img {
                     display: none;
                 }
                 header button:hover img {
-                    display: block;
+                    display: none;
                 }
                 header button:hover{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 160px;
+                    display: inline-block;
+                
                 
                 }
                 .home {
@@ -512,13 +618,15 @@ padding: 0 10px;
                 }
                 .icon {
                 position: absolute;
+                width: 220px;
                 bottom: 5%;
-                right: 20%;
-                padding: 0 0px;
+                right: 8%;
+                padding: 0 0px 0 0px;
+                margin-left: 90px;
                 }
                 .icon > i {
-                    font-size: 10rem;
-                    padding: 0 10px;
+                    font-size: 5rem;
+                    
                     transition: all 0.3s ease 0s;
                     cursor: pointer;;
                 }
